@@ -10,7 +10,7 @@ export interface CategoryItem {
 // 获取所有分类
 export async function GET() {
   try {
-    const url = `${process.env.BASE_URL}/api/category`;
+    const url = `${process.env.BASE_URL}/blog/category`;
     const res = await fetch(url, {
       method: "get",
     });

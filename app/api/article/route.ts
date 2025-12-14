@@ -32,7 +32,7 @@ export async function GET(request: NextRequest) {
     const query = request.nextUrl.searchParams;
     const page = query.get("page");
     const pageSize = query.get("pageSize");
-    const url = `${process.env.BASE_URL}/api/post?page=${Number(
+    const url = `${process.env.BASE_URL}/blog/post?page=${Number(
       page
     )}&pageSize=${Number(pageSize)}`;
     const res = await fetch(url, {

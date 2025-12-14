@@ -6,7 +6,7 @@ export async function GET(
 ) {
   try {
     const { id } = await params;
-    const url = `${process.env.BASE_URL}/api/post/like/${id}`;
+    const url = `${process.env.BASE_URL}/blog/post/like/${id}`;
     const res = await fetch(url, {
       method: "get",
     });
